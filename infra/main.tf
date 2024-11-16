@@ -20,9 +20,9 @@ resource "aws_s3_bucket" "lambda_bucket" {
 }
 
 module "iam_policies" {
-  source           = "./modules/iam_policies"
-  app_name         = var.app_name
-  stage_name       = var.env_name
+  source     = "./modules/iam_policies"
+  app_name   = var.app_name
+  stage_name = var.env_name
 }
 
 module "api_lambda_function" {
@@ -31,7 +31,7 @@ module "api_lambda_function" {
   publish_dir   = "${path.module}/../src/${var.app_name}/bin/Release/net8.0/linux-x64/publish"
   zip_file      = "build.zip"
   function_name = "${var.app_name}_${var.env_name}"
-  handler       = "${var.app_name}"
+  handler       = var.app_name
 
   environment_variables = {
     "ASPNETCORE_ENVIRONMENT" = var.env_name
