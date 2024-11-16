@@ -1,4 +1,5 @@
 using CommentToEmail.Features.Comments.Dtos;
+using CommentToEmail.Features.Comments.Services;
 using CommentToEmail.Features.Comments.Validators;
 using CommentToEmail.Features.Common.Filters.FluentValidationFilter;
 using FluentValidation;
@@ -12,6 +13,7 @@ builder.Services.AddControllers(o =>
 });
 
 builder.Services.AddScoped<IValidator<CommentDto>, CommentDtoValidator>();
+builder.Services.AddScoped<ICommentsService, CommentsService>();
 
 // Add AWS Lambda support. When application is run in Lambda Kestrel is swapped out as the web server with Amazon.Lambda.AspNetCoreServer. This
 // package will act as the webserver translating request and responses between the Lambda event source and ASP.NET Core.
