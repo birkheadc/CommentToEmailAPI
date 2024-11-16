@@ -13,6 +13,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-app.MapGet("/", () => "Comment to Email API Root Endpoint");
+app.MapGet("/", () => "Comment to Email API Root Endpoint. [ Version 1.0.0 ]");
 
 app.Run();
