@@ -43,6 +43,11 @@ resource "aws_iam_role_policy_attachment" "api_lambda_cloudwatch_metrics" {
   policy_arn = module.iam_policies.cloudwatch_put_metrics
 }
 
+resource "aws_iam_role_policy_attachment" "api_lambda_ses_send_email" {
+  role       = module.api_lambda_function.function_role_name
+  policy_arn = module.iam_policies.ses_send_email
+}
+
 module "api_gateway" {
   source     = "./modules/api_gateway"
   api_name   = "${var.app_name}_Api"
