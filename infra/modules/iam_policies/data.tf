@@ -12,3 +12,10 @@ data "aws_iam_policy_document" "cloudwatch_put_metrics" {
     resources = ["*"]
   }
 }
+
+data "aws_iam_policy_document" "ses_send_email" {
+  statement {
+    actions   = ["ses:SendEmail"]
+    resources = ["*"]
+  }
+}
