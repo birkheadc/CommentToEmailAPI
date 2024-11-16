@@ -5,5 +5,5 @@ namespace CommentToEmail.Features.Comments.Services;
 
 public interface ICommentsService
 {
-  public ApiResult ProcessComment(CommentDto comment);
+  public Task<ApiResult> ProcessComment(CommentDto comment);
 }

@@ -12,9 +12,9 @@ public class CommentsController(ICommentsService commentsService) : ControllerBa
   private readonly ICommentsService _commentsService = commentsService;
 
   [HttpPost]
-  public IActionResult Post([FromBody] CommentDto comment)
+  public async Task<IActionResult> Post([FromBody] CommentDto comment)
   {
-    ApiResult result = _commentsService.ProcessComment(comment);
+    ApiResult result = await _commentsService.ProcessComment(comment);
     return result.GetActionResult();
   }
 }
