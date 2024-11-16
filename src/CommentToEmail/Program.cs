@@ -21,6 +21,19 @@ builder.Services.AddAWSLambdaHosting(LambdaEventSource.RestApi);
 
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(
+  (options) =>
+  {
+    options.AddPolicy(
+      name: "All",
+      builder =>
+      {
+        builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials();
+      }
+    );
+  }
+);
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -28,6 +41,8 @@ if (app.Environment.IsDevelopment())
   app.UseSwagger();
   app.UseSwaggerUI();
 }
+
+app.UseCors("All");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
