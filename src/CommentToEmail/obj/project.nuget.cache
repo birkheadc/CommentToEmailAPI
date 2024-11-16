@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "QSWD/3NNRGRCVIIc+8RTK7UlMiXEP0WnqFy37NRH489dHpq8esXcLmf1DkLrVzPsmRneVzTGPtFFNHT2yeQk5w==",
+  "success": true,
+  "projectFilePath": "/home/colby/dev/comment_to_email/src/CommentToEmail/CommentToEmail.csproj",
+  "expectedPackageFiles": [
+    "/home/colby/.nuget/packages/amazon.lambda.apigatewayevents/2.7.1/amazon.lambda.apigatewayevents.2.7.1.nupkg.sha512",
+    "/home/colby/.nuget/packages/amazon.lambda.applicationloadbalancerevents/2.2.0/amazon.lambda.applicationloadbalancerevents.2.2.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/amazon.lambda.aspnetcoreserver/9.0.1/amazon.lambda.aspnetcoreserver.9.0.1.nupkg.sha512",
+    "/home/colby/.nuget/packages/amazon.lambda.aspnetcoreserver.hosting/1.7.1/amazon.lambda.aspnetcoreserver.hosting.1.7.1.nupkg.sha512",
+    "/home/colby/.nuget/packages/amazon.lambda.core/2.3.0/amazon.lambda.core.2.3.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/amazon.lambda.logging.aspnetcore/3.1.0/amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/amazon.lambda.runtimesupport/1.11.0/amazon.lambda.runtimesupport.1.11.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/amazon.lambda.serialization.systemtextjson/2.4.3/amazon.lambda.serialization.systemtextjson.2.4.3.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.extensions.configuration/2.1.0/microsoft.extensions.configuration.2.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.extensions.configuration.abstractions/2.1.0/microsoft.extensions.configuration.abstractions.2.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.extensions.configuration.binder/2.1.0/microsoft.extensions.configuration.binder.2.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.extensions.logging/2.1.0/microsoft.extensions.logging.2.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.extensions.logging.abstractions/2.1.0/microsoft.extensions.logging.abstractions.2.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.extensions.options/2.1.0/microsoft.extensions.options.2.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.extensions.primitives/2.1.0/microsoft.extensions.primitives.2.1.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/system.memory/4.5.0/system.memory.4.5.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.0/system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512",
+    "/home/colby/.nuget/packages/microsoft.netcore.app.crossgen2.linux-x64/8.0.10/microsoft.netcore.app.crossgen2.linux-x64.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
